@@ -12,7 +12,7 @@ $ = function(sel) {
   var version = {
     "no":"1.0.6",
     "major":"1",
-    "minor":"0",
+    "minor":"4",
     "patch":"5"
 }
 
