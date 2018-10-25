@@ -204,7 +204,7 @@ $ = function(sel) {
         );
   
   }
-  setInterval(timeLoop, 1000);
+  setInterval(timeLoop, 500);
   //count down timer end
   
   const copyToClipboard = str=>{
@@ -219,7 +219,8 @@ $ = function(sel) {
   
   function copyCode(token) {
   
-    copyToClipboard(token)
+      copyToClipboard(token)
+      navigator.vibrate(20);
     Snackbar.show({
         actionTextColor: '#ff0000',
         text: "Copied text!",
@@ -307,5 +308,6 @@ $ = function(sel) {
     saveStorage();
     updateTotp();
     loadSettingsAccounts();
+    navigator.vibrate(20);
   }
   
